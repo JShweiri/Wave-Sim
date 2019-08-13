@@ -9,6 +9,32 @@
 
   <h1>Wave Simulator</h1>
   <canvas id="graph"></canvas>
+
+  <form action="#" onsubmit="return false">
+  	<label for="String_Length">String Length:</label>
+    <input type="number" id="String_Length" name="String_Length" min="1" max="100" step="any" value="9">
+    
+    <label for="Sim_Time">Simulation time:</label>
+    <input type="number" id="Sim_Time" name="Sim_Time" min="1" max="100"  step="any" value="25">
+
+    <br>
+  
+    <label for="Graph_Height">Graph Height:</label>
+    <input type="number" id="Graph_Height" name="Graph_Height" min="0" max="10" step="any" value="3">
+  
+    <label for="c">c value:</label>
+    <input type="number" id="c" name="c" min="0" max="10" step="any" value="1">
+
+    <br>
+  
+    <label for="DT">Delta T:</label>
+    <input type="number" id="DT" name="DT" min="0" max="10" step="any" value="0.01">
+  
+    <label for="DX">Delta X:</label>
+    <input type="number" id="DX" name="DX" min="0" max="10" step="any" value="0.01">
+    
+    <input type="button" name="Submit" value="Submit" onclick="submitted();"/>
+  </form>
   
   <script src="code.js"></script>
 </body>

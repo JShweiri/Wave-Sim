@@ -178,10 +178,10 @@ nx = Math.ceil(XMAX/dx);
 
  u = [];
 
-//initial conditions
+//initial conditions                                                AND HERE!!!!!!!!!!!!!
 u[0] = [];
 for (let i = 0; i <= nx; i++){
-    u[0][i] =  - Math.sin(dx*i);
+    u[0][i] =   Math.sin(dx*i) + Math.sin(dx*i/2);
 }
  LB = u[0][0];
  RB = u[0][nx];

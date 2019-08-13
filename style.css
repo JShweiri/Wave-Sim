@@ -1,0 +1,15 @@
+canvas {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+#fields {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.field {
+	width: 20vw;
+	margin: auto;
+}
